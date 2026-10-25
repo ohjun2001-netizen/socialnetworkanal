@@ -1,0 +1,63 @@
+{
+  "dataset": "mathoverflow",
+  "signature": "e0245bdc3fca6685272da779f66e64abc4afb06ffd804f7510f4a831680ba1a0",
+  "source_sha256": {
+    "remedy_protocol.json": "550a71a44b142d0e2a0c9b2a3ec77e54e108c382b1183ddfb482bb287b5319f5",
+    "remedy_models.py": "0689ad599b18032dd9fd2b83bfa7c7968128129121027e0a89e9121965f00385",
+    "remedy_run.py": "9f14321f9e38fdc654ba6ed35349c7c1e346557177a4387ce303749eb7110a35"
+  },
+  "data": {
+    "dataset": "mathoverflow",
+    "source": "https://snap.stanford.edu/data/sx-mathoverflow.html",
+    "download_source": "pinned public mirror; original SNAP host timed out",
+    "mirror_commit": "a1023fc6c54c70cd92d2152c8dc091829f7e2451",
+    "files": [
+      {
+        "kind": "a2q",
+        "rows": 107581,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-a2q.txt",
+        "sha256": "51a0728050659cee0a59a63f7d84db889c4d64afe36220c381046bc20464f65e",
+        "bytes": 2317694
+      },
+      {
+        "kind": "c2a",
+        "rows": 195330,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-c2a.txt",
+        "sha256": "76c0ee20dcb9dcaa038549b678252df7b2436ab0bdb2d035057258e8723d6f84",
+        "bytes": 4176276
+      },
+      {
+        "kind": "c2q",
+        "rows": 203639,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-c2q.txt",
+        "sha256": "7728dc851dad6834ac669f843c159270231c36e9b7e8a7f3682a1bd6e4876bf3",
+        "bytes": 4430416
+      }
+    ],
+    "raw_events": 506550,
+    "self_events_removed": 116109,
+    "used_events": 390441,
+    "users": 24759,
+    "first_time": 1254192988,
+    "last_time": 1457261724,
+    "type_counts_used": {
+      "c2q": 146649,
+      "c2a": 139654,
+      "a2q": 104138
+    },
+    "identical_multiset_to_v1": true,
+    "duplicate_event_rows_retained": 27,
+    "node_ids": "remapped identifiers only; no future-derived node features"
+  },
+  "activity_source_cutoffs": 787513,
+  "activity_positive": 253497,
+  "feature_rows": 1120007,
+  "pair_positive": 64641,
+  "models": [
+    "Two-stage activity-choice",
+    "Recency-type experts",
+    "Two-stage recency-type experts"
+  ],
+  "elapsed_seconds": 317.86242499994114,
+  "status": "complete"
+}

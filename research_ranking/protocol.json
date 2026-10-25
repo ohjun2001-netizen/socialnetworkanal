@@ -1,0 +1,33 @@
+{
+  "version": "superuser-ranking-v1",
+  "created_after_confirmation": true,
+  "status": "Post-hoc exploratory extension designed after the Super User confirmation test was exposed; it must not be described as untouched confirmation.",
+  "dataset": "SNAP Super User temporal network",
+  "candidate_and_target": "Same 24-hour directed-pair candidates and next-24-hour recurrence labels as confirmation_superuser_v1.",
+  "splits": "Reuse the five expanding temporal folds without changing any boundary. Train uses 6-hour cutoffs; tune, calibration, and test use non-overlapping UTC-midnight cutoffs.",
+  "models": [
+    "Frozen Baseline Full LightGBM",
+    "CUDA RankNet",
+    "Fixed 50/50 baseline-ranker ensemble"
+  ],
+  "gpu_requirement": "CUDA is mandatory. Abort instead of silently falling back to CPU.",
+  "ranker": {
+    "architecture": "78 -> 128 -> 64 -> 1 MLP with LayerNorm, SiLU, and dropout 0.10",
+    "pointwise_loss": "Class-weighted binary cross entropy over every training candidate; positive weight capped at 20.",
+    "pairwise_loss": "RankNet softplus loss within the same (cutoff, source) group. Each positive is paired with the hardest frequency/recency negative and one random negative when available.",
+    "pairwise_weight": 0.5,
+    "optimizer": "AdamW, learning rate 0.001, weight decay 0.0001",
+    "batch_size": 65536,
+    "maximum_epochs": 4,
+    "early_stopping": "Tune AP, patience 2; test is never used for stopping.",
+    "mixed_precision": "CUDA float16 autocast with gradient scaling"
+  },
+  "calibration": "Logistic calibration and F1 threshold selection use only the calibration interval.",
+  "ensemble": "Arithmetic mean of the frozen calibrated baseline probability and calibrated CUDA RankNet probability. Its threshold is the arithmetic mean of the two calibration-derived thresholds; no test tuning.",
+  "seeds": [2026, 2027, 2028],
+  "primary_exploratory_question": "Does CUDA RankNet improve source-conditional NDCG@5 over the frozen baseline while losing no more than 0.005 overall AP?",
+  "success_rule": "The paired 7-day block-bootstrap 95% interval for NDCG@5 difference is entirely above zero and pooled AP difference is at least -0.005.",
+  "reported_pair_metrics": ["AP", "ROC-AUC", "F1", "precision", "recall", "MCC", "Brier"],
+  "reported_source_conditional_metrics": ["Recall@1", "Recall@5", "NDCG@5", "MAP@5"],
+  "scope_warning": "Exploratory extension, not a new confirmatory test and not evidence of causality or SOTA."
+}

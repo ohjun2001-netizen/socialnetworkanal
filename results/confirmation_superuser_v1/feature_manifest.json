@@ -1,0 +1,19 @@
+{
+  "dataset": "superuser",
+  "rows": 3818482,
+  "features": 78,
+  "cutoffs": 10442,
+  "daily_cutoffs": 2613,
+  "cache": "features_335c9599f72d.npz",
+  "cache_sha256": "e4d7482fa6453f6c262dc1aaa9daf1695aaa5ad5608aa16957fa8c6c6b11a3bf",
+  "source_sha256": {
+    "research_confirmation\\features.py": "32c212a9171fbd5ed924c35e4d4ca25a0b40ea12784b22c8e2d0f22b1bcfedb5",
+    "research_confirmation\\data.py": "335672145b9599bb012cecba747951ca918caef6a4460f7c2d3d089a417c915f",
+    "research_extensions\\features.py": "024d935ceccedbebfafc4137bbeedece1187a8dedcd65e8a955d0d3e05ccc02c",
+    "research\\features.py": "c7e846f86dbc16366e0ecba35ddd811681deb741e563ce4eab06090b27646fe3",
+    "mathoverflow_lab\\features.py": "6ae858ff0eb9e71ea9d8bcc9205bb81a0502b1e6c0760336ef9caaa513c7425a",
+    "mathoverflow_lab\\exploration.py": "d9199496b421f3c187029cab1ac4373dc7edf0fec3320be2b7d428da63f4e603"
+  },
+  "protocol_sha256": "9fec60f83523aaebe61d84b4d481a0ceda7b37dfafc6e3b0e76062f2c4481f42",
+  "test_metrics_exposed": false
+}

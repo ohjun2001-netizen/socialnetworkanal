@@ -1,0 +1,21 @@
+resume: mathoverflow fold=0 seed=2026 complete
+mathoverflow fold=0 seed=2027: training
+tgn seed=2027 epoch=1 loss=0.3315 tune_AP=0.1687
+tgn seed=2027 epoch=2 loss=0.3216 tune_AP=0.1774
+tgn seed=2027 epoch=3 loss=0.3197 tune_AP=0.1778
+tgn seed=2027 epoch=4 loss=0.3177 tune_AP=0.1836
+sage seed=2027 epoch=1 loss=0.3389 tune_AP=0.1472
+sage seed=2027 epoch=2 loss=0.3297 tune_AP=0.1532
+sage seed=2027 epoch=3 loss=0.3269 tune_AP=0.1538
+sage seed=2027 epoch=4 loss=0.3257 tune_AP=0.1572
+mathoverflow fold=0 seed=2027: complete in 265.3s
+mathoverflow fold=0 seed=2028: training
+tgn seed=2028 epoch=1 loss=0.3325 tune_AP=0.1566
+tgn seed=2028 epoch=2 loss=0.3223 tune_AP=0.1598
+tgn seed=2028 epoch=3 loss=0.3212 tune_AP=0.1670
+tgn seed=2028 epoch=4 loss=0.3206 tune_AP=0.1766
+sage seed=2028 epoch=1 loss=0.3388 tune_AP=0.1479
+sage seed=2028 epoch=2 loss=0.3298 tune_AP=0.1526
+sage seed=2028 epoch=3 loss=0.3266 tune_AP=0.1524
+sage seed=2028 epoch=4 loss=0.3251 tune_AP=0.1556
+mathoverflow fold=0 seed=2028: complete in 256.8s

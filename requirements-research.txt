@@ -1,0 +1,5 @@
+-r requirements.txt
+streamlit>=1.55,<2
+lightgbm==4.7.0
+optuna>=4.0,<5
+scipy>=1.13

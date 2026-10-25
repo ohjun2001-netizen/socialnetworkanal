@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/raw/
+data/typed/
+data/cache/
+models/
+*.pt
+*.joblib
+results/research_v2/*/fold_*/seed_*/predictions.csv.gz
+results/research_v2/*/fold_*/seed_*/*_scores.npz
+results/research_v2/*/oof_seed_ensemble.csv.gz
+results/lookback_density_v1/*/lookback_*/fold_*/seed_*/predictions.csv.gz
+runs/
+

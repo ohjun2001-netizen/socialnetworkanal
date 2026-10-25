@@ -1,0 +1,65 @@
+{
+  "boundaries": {
+    "fold": 0,
+    "validation_start": 1351036800,
+    "calibration_start": 1359936000,
+    "test_start": 1368748800,
+    "test_stop": 1386460800,
+    "partitions": {
+      "train": {
+        "n": 38614,
+        "positive": 2219,
+        "first": 1235692800,
+        "last": 1350950400,
+        "last_label_end": 1351036800
+      },
+      "tune": {
+        "n": 7003,
+        "positive": 415,
+        "first": 1351036800,
+        "last": 1359849600,
+        "last_label_end": 1359936000
+      },
+      "cal": {
+        "n": 7302,
+        "positive": 447,
+        "first": 1359936000,
+        "last": 1368662400,
+        "last_label_end": 1368748800
+      },
+      "test": {
+        "n": 15110,
+        "positive": 868,
+        "first": 1368748800,
+        "last": 1386374400,
+        "last_label_end": 1386460800
+      }
+    }
+  },
+  "partitions": {
+    "train": {
+      "pairs": 702243,
+      "pair_positive": 22690,
+      "source_cutoffs": 395587,
+      "active_source_cutoffs": 112054
+    },
+    "tune": {
+      "pairs": 33988,
+      "pair_positive": 1111,
+      "source_cutoffs": 20399,
+      "active_source_cutoffs": 4979
+    },
+    "cal": {
+      "pairs": 32665,
+      "pair_positive": 1152,
+      "source_cutoffs": 20269,
+      "active_source_cutoffs": 4749
+    },
+    "test": {
+      "pairs": 66821,
+      "pair_positive": 2211,
+      "source_cutoffs": 40127,
+      "active_source_cutoffs": 9367
+    }
+  }
+}

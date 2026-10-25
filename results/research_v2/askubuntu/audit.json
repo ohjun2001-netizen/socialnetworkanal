@@ -1,0 +1,23 @@
+{
+  "dataset": "askubuntu",
+  "passed": true,
+  "verified_model_runs": 255,
+  "label_spotchecks": 1000,
+  "test_candidates": 84311,
+  "neural_device_counts": {
+    "cuda": 30
+  },
+  "checks": [
+    "past-only candidate existence",
+    "protocol and core-code fingerprints",
+    "declared tuning and epoch budgets",
+    "24h raw label reconstruction",
+    "full future horizon",
+    "mature labels at split boundaries",
+    "disjoint test periods",
+    "same candidates for every model",
+    "finite scores",
+    "metric recomputation from saved predictions",
+    "constant-score baseline ties"
+  ]
+}

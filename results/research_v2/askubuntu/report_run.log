@@ -1,0 +1,18 @@
+                model  ap_mean  auc_mean  f1_mean
+      Hybrid ensemble 0.219500  0.786388 0.282951
+    No decay LightGBM 0.219482  0.786264 0.286309
+        Full LightGBM 0.218328  0.785576 0.285307
+No structure LightGBM 0.216470  0.785065 0.281209
+    No types LightGBM 0.198759  0.747461 0.267199
+          History HGB 0.193854  0.742334 0.264536
+       TGN recurrence 0.189976  0.763275 0.257419
+    Rolling GraphSAGE 0.163641  0.720183 0.229072
+             Decay 6h 0.136678  0.656612 0.213937
+              Recency 0.118660  0.614786 0.180806
+       Pair frequency 0.109571  0.620376 0.205364
+          Adamic Adar 0.081004  0.523366 0.125617
+     Common neighbors 0.080207  0.523456 0.128201
+              Jaccard 0.075699  0.521645 0.127691
+             EdgeBank 0.071723  0.500000 0.133734
+      Always positive 0.071723  0.500000 0.133734
+     Train prevalence 0.071723  0.500000 0.133734

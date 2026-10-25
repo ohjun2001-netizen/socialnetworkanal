@@ -1,0 +1,52 @@
+{
+  "dataset": "mathoverflow",
+  "model": "Full LightGBM",
+  "primary_display_seed": 2026,
+  "sensitivity_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "aggregation": "pooled five disjoint time folds; no seed counts pooled",
+  "source_sha256": "02719d2828d333b6a439e6c157a7d477e3396292d9c7986642a5c3d138b8f567",
+  "cache_sha256": "7540ddd663a0ef6470c456ef3027eb92f13a9112636cf7916407016e0bbe2577",
+  "raw_sha256": {
+    "sx-mathoverflow-a2q.txt": "51a0728050659cee0a59a63f7d84db889c4d64afe36220c381046bc20464f65e",
+    "sx-mathoverflow-c2a.txt": "76c0ee20dcb9dcaa038549b678252df7b2436ab0bdb2d035057258e8723d6f84",
+    "sx-mathoverflow-c2q.txt": "7728dc851dad6834ac669f843c159270231c36e9b7e8a7f3682a1bd6e4876bf3"
+  },
+  "prediction_sha256": {
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_0\\seed_2026\\predictions.csv.gz": "0e2aeb1059a740543ad65d868cc938cf4c3bae0ac72ae215a574765778a37602",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_1\\seed_2026\\predictions.csv.gz": "e17ab7430df114f22183b252280ad7e9659c0aa39f1cf06cc2d9e4d934dd6a26",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_2\\seed_2026\\predictions.csv.gz": "27ca6ae26a91ef14a57f7e696b841376fe6c3e7e339df03f0b071c974364d4c6",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_3\\seed_2026\\predictions.csv.gz": "1087da7b02c2bf1abae9caea10a039025685b5dd8e6a8bc56e86e33fd00ecf3e",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_4\\seed_2026\\predictions.csv.gz": "110c29b29281168163e5586eb9190c602334f0b016b8ac6b3fba07ff0b7e770f",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_0\\seed_2027\\predictions.csv.gz": "5f64e905832a170c25f80f7d90f0beb5ee7c20931b3784953aadbf65c7d28061",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_1\\seed_2027\\predictions.csv.gz": "95cc33f794dff74526a1c4ebe17dab2cbd3b486b73c0b919feea00df51a8ae41",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_2\\seed_2027\\predictions.csv.gz": "70d40c9d3f0916b16e3d4c22634655f7d75b3cc4b57a46279063ff52d4398b23",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_3\\seed_2027\\predictions.csv.gz": "abd372d7a988b352c8bd7b2fd2ff2d9e1ade883df9c5e48af964dff9e8c1bef9",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_4\\seed_2027\\predictions.csv.gz": "4a966972686e2e900dabbb7e6401e7f15af09986b4399120c2999377ac1091ab",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_0\\seed_2028\\predictions.csv.gz": "865b9c57b6a6476605eceae5333348b4643e7a52605e4d34c646a818635fe76a",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_1\\seed_2028\\predictions.csv.gz": "ab5897e308ef735adc9dce27463ede58641254690c0f616f7db4a515c9c9725f",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_2\\seed_2028\\predictions.csv.gz": "2c6158f712018ab6f02a68354135f9a92f574407c22350b086a08e9a1bde5e3b",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_3\\seed_2028\\predictions.csv.gz": "0d6c32baf09a99cd8dffd39d7ef6b5a532cc2837be135d050e5388e2b4423a37",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_4h_train_24h\\fold_4\\seed_2028\\predictions.csv.gz": "58aadc09b460370e919af5b74722748a349a86836664764696fba08310826b7b",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_0\\seed_2026\\predictions.csv.gz": "1e6f64da91931b9040e8899b3d15319b9a3ee2a351235c88c621bf9c67fe5b94",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_1\\seed_2026\\predictions.csv.gz": "2900a4f58858127307560f80cbd8fcd70cee3e78d86f45fb95f739a34ae283e1",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_2\\seed_2026\\predictions.csv.gz": "a82704a63ef7f6c07cd76f6eb77c4b6544b195f1aa57e542e31da14a92be0d98",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_3\\seed_2026\\predictions.csv.gz": "90c456b595ffe3ebd340135681ac982fe30a012ccd3a85aa38943040e181d2ac",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_4\\seed_2026\\predictions.csv.gz": "743b4dff8d39463c8fa42314a4312b95b2ad8dd0d77eadab1edfdaa3f695b39b",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_0\\seed_2027\\predictions.csv.gz": "b40baecd8b95da8094fa204f9c0f4b1c29367f33745dd769149d2139b1af823b",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_1\\seed_2027\\predictions.csv.gz": "57d496f6cac17e34374a3d025fad2316a726b2ee65e8b5aa5b6bad9ae930f24c",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_2\\seed_2027\\predictions.csv.gz": "5b0c3a387b273e77430850c86c27cc1c7095dbd7ac237333bd8502d19d416bd9",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_3\\seed_2027\\predictions.csv.gz": "47736bd331da30fb31ee01110fd035c824a48dfe10a2c28889ba150b8bb1bc7e",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_4\\seed_2027\\predictions.csv.gz": "0b948a0ee33bb644e91e6acaba5f1e1715911ca1d7ff57e0e188d030d34c6bc3",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_0\\seed_2028\\predictions.csv.gz": "8ef8d1a54e215f8673f4c0bf3840176f7da4871aba77606382695e7047546a37",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_1\\seed_2028\\predictions.csv.gz": "3b77138d6881e6df3b911f8d1e4618c6c257a02ae6b8298eedeb7e6f9fdd6df0",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_2\\seed_2028\\predictions.csv.gz": "05aafb9e094ded72ba2201c54103507453e3a9d32abe27310fd3c8677acd7d26",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_3\\seed_2028\\predictions.csv.gz": "9becd18441f5e77c89183dede0bfe859b8b61b8925ee95ec35ae731e8dceee88",
+    "results\\lookback_density_v1\\mathoverflow\\lookback_24h_train_6h\\fold_4\\seed_2028\\predictions.csv.gz": "7aefac7c233fe1c8627f03a21215d8c595fed0224ab1511fc1e4e4cc9e0cfc61"
+  },
+  "scope": "post-hoc descriptive error analysis; no retraining, threshold changes, or causal attribution",
+  "all_primary_labels_reconstructed": 165146
+}

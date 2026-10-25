@@ -1,0 +1,187 @@
+[
+  {
+    "fold": 0,
+    "validation_start": 1321747200,
+    "calibration_start": 1333065600,
+    "test_start": 1344297600,
+    "test_stop": 1366934400,
+    "partitions": {
+      "train": {
+        "rows": 1210630,
+        "cutoffs": 4168,
+        "first": 1220313600,
+        "last": 1321660800,
+        "last_label_end": 1321747200
+      },
+      "tune": {
+        "rows": 47398,
+        "cutoffs": 131,
+        "first": 1321747200,
+        "last": 1332979200,
+        "last_label_end": 1333065600
+      },
+      "cal": {
+        "rows": 51964,
+        "cutoffs": 130,
+        "first": 1333065600,
+        "last": 1344211200,
+        "last_label_end": 1344297600
+      },
+      "test": {
+        "rows": 118209,
+        "cutoffs": 262,
+        "first": 1344297600,
+        "last": 1366848000,
+        "last_label_end": 1366934400
+      }
+    }
+  },
+  {
+    "fold": 1,
+    "validation_start": 1344297600,
+    "calibration_start": 1355616000,
+    "test_start": 1366934400,
+    "test_stop": 1389484800,
+    "partitions": {
+      "train": {
+        "rows": 1607781,
+        "cutoffs": 5212,
+        "first": 1220313600,
+        "last": 1344211200,
+        "last_label_end": 1344297600
+      },
+      "tune": {
+        "rows": 58234,
+        "cutoffs": 131,
+        "first": 1344297600,
+        "last": 1355529600,
+        "last_label_end": 1355616000
+      },
+      "cal": {
+        "rows": 59975,
+        "cutoffs": 131,
+        "first": 1355616000,
+        "last": 1366848000,
+        "last_label_end": 1366934400
+      },
+      "test": {
+        "rows": 107157,
+        "cutoffs": 261,
+        "first": 1366934400,
+        "last": 1389398400,
+        "last_label_end": 1389484800
+      }
+    }
+  },
+  {
+    "fold": 2,
+    "validation_start": 1366934400,
+    "calibration_start": 1378166400,
+    "test_start": 1389484800,
+    "test_stop": 1412035200,
+    "partitions": {
+      "train": {
+        "rows": 2079707,
+        "cutoffs": 6260,
+        "first": 1220313600,
+        "last": 1366848000,
+        "last_label_end": 1366934400
+      },
+      "tune": {
+        "rows": 51178,
+        "cutoffs": 130,
+        "first": 1366934400,
+        "last": 1378080000,
+        "last_label_end": 1378166400
+      },
+      "cal": {
+        "rows": 55979,
+        "cutoffs": 131,
+        "first": 1378166400,
+        "last": 1389398400,
+        "last_label_end": 1389484800
+      },
+      "test": {
+        "rows": 105679,
+        "cutoffs": 261,
+        "first": 1389484800,
+        "last": 1411948800,
+        "last_label_end": 1412035200
+      }
+    }
+  },
+  {
+    "fold": 3,
+    "validation_start": 1389484800,
+    "calibration_start": 1400803200,
+    "test_start": 1412035200,
+    "test_stop": 1434672000,
+    "partitions": {
+      "train": {
+        "rows": 2507485,
+        "cutoffs": 7304,
+        "first": 1220313600,
+        "last": 1389398400,
+        "last_label_end": 1389484800
+      },
+      "tune": {
+        "rows": 52909,
+        "cutoffs": 131,
+        "first": 1389484800,
+        "last": 1400716800,
+        "last_label_end": 1400803200
+      },
+      "cal": {
+        "rows": 52770,
+        "cutoffs": 130,
+        "first": 1400803200,
+        "last": 1411948800,
+        "last_label_end": 1412035200
+      },
+      "test": {
+        "rows": 103892,
+        "cutoffs": 262,
+        "first": 1412035200,
+        "last": 1434585600,
+        "last_label_end": 1434672000
+      }
+    }
+  },
+  {
+    "fold": 4,
+    "validation_start": 1412035200,
+    "calibration_start": 1423353600,
+    "test_start": 1434672000,
+    "test_stop": 1457222400,
+    "partitions": {
+      "train": {
+        "rows": 2930038,
+        "cutoffs": 8348,
+        "first": 1220313600,
+        "last": 1411948800,
+        "last_label_end": 1412035200
+      },
+      "tune": {
+        "rows": 51959,
+        "cutoffs": 131,
+        "first": 1412035200,
+        "last": 1423267200,
+        "last_label_end": 1423353600
+      },
+      "cal": {
+        "rows": 51933,
+        "cutoffs": 131,
+        "first": 1423353600,
+        "last": 1434585600,
+        "last_label_end": 1434672000
+      },
+      "test": {
+        "rows": 118340,
+        "cutoffs": 261,
+        "first": 1434672000,
+        "last": 1457136000,
+        "last_label_end": 1457222400
+      }
+    }
+  }
+]

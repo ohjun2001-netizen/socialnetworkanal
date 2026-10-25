@@ -1,0 +1,52 @@
+{
+  "dataset": "askubuntu",
+  "model": "Full LightGBM",
+  "primary_display_seed": 2026,
+  "sensitivity_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "aggregation": "pooled five disjoint time folds; no seed counts pooled",
+  "source_sha256": "02719d2828d333b6a439e6c157a7d477e3396292d9c7986642a5c3d138b8f567",
+  "cache_sha256": "cbb16ddb72cc58b8c2b95c2bb92787a46f68357fddd14cf9bc8148967025004e",
+  "raw_sha256": {
+    "sx-askubuntu-a2q.txt": "1791fb86d5ae6923831869e68d31a8db19fb4bf1a24c6de1cf11635a6f08a21d",
+    "sx-askubuntu-c2a.txt": "0bc020329dedef1dbe97a6d1c45fd5dcc23147c7082aff2cbec012e233f6a193",
+    "sx-askubuntu-c2q.txt": "01cd43f3c9e31b507c9113d15ec489ae705d4a1a94546c85171126b0a59586fe"
+  },
+  "prediction_sha256": {
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_0\\seed_2026\\predictions.csv.gz": "16d4de4bfae1d3a7c53fd022a6118c4256d6038bbd6df7631a3a419c2bad98ec",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_1\\seed_2026\\predictions.csv.gz": "144e66f5f57aacf95a1a3fde8d6b29f89cdd63206f31db06674952293ab98296",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_2\\seed_2026\\predictions.csv.gz": "1ae118c2ccb6b0fbb038516a152b771e80e94425e6af118e22384bbb6d4256e8",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_3\\seed_2026\\predictions.csv.gz": "8ad0f93083b553472a866df70e64814ad00c0966ce34f1ac04793657cf3906b9",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_4\\seed_2026\\predictions.csv.gz": "fc81ecd9f36d1206c3869e1d89a74e59444c1b46401d9111f6131b8373ac6196",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_0\\seed_2027\\predictions.csv.gz": "61da7ce3f68911e2202ad555a791485ab7e2efd86a97c5ef7026ec32cd47d7c1",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_1\\seed_2027\\predictions.csv.gz": "19bdacc6995e2364a19aefdb5284f3ac3700bb5dab8f853e2f9fc45f24b91430",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_2\\seed_2027\\predictions.csv.gz": "927e5eb67fcffeb5a1657de57b46b82362b83e42f9dd1f6f225bb6016051574d",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_3\\seed_2027\\predictions.csv.gz": "9779203f648250c87c76c4ddca6c1529b3655e6e00f7ad891cd8e4d663b4dc59",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_4\\seed_2027\\predictions.csv.gz": "e23e8bc11f7825434d2583972508aeb62a0a505f988291777bf2f5a1cbb9c588",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_0\\seed_2028\\predictions.csv.gz": "c20e32f694ac9bd16b6c052f8bad7795ad1f94297d7533f360cc5298e3bc63c0",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_1\\seed_2028\\predictions.csv.gz": "2bd986d8b3521141706f3bb2b2523029ad47585390b028671938e30a7f2510c5",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_2\\seed_2028\\predictions.csv.gz": "934faa1344ca7f66c372d1e6c0e44bfb1c0f9238d008832e111ee10dd30399cc",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_3\\seed_2028\\predictions.csv.gz": "9a174075b53d51b3a4ac167da7004690e0a919c8c9ba3a6e85331caf10e3b4b2",
+    "results\\lookback_density_v1\\askubuntu\\lookback_4h_train_24h\\fold_4\\seed_2028\\predictions.csv.gz": "28579cd9e316f6bb5248fd019312131c508383241afd4ca9d62b492e93dcdd78",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_0\\seed_2026\\predictions.csv.gz": "c540c16c1cc3495f2fd23717f867b354286416c22a432151dd4e412012a33f0a",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_1\\seed_2026\\predictions.csv.gz": "073a86c2d1ac82e1f46abc78a6ea9acbc3bf941441585e3e7d8e7224e6431479",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_2\\seed_2026\\predictions.csv.gz": "b3bd59b3150a8a50974445abc4806ad63d0920450a68f659559eb4490257b4d3",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_3\\seed_2026\\predictions.csv.gz": "35ae3f831177b822ca52851d41cf56650c94429c5620d8d4e9da5b80c1a87655",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_4\\seed_2026\\predictions.csv.gz": "2814c2c671b16cee6182c251dff3ddc2be0b0cea210b40565adb8e05434bb876",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_0\\seed_2027\\predictions.csv.gz": "b7f8db50f6bdeefcbf5de59a35a12fff8905630bfc3f27a94f3e4ac9308fa6f7",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_1\\seed_2027\\predictions.csv.gz": "194ecc428b13478ddf6d8a8ae1f4153c79af307b7e502351954b17f8fcd9e66d",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_2\\seed_2027\\predictions.csv.gz": "7a51e96443f6fd654bb415908cbbb3b9ae0e54627437c043f886d6ed39e7a728",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_3\\seed_2027\\predictions.csv.gz": "4aa5b09c23e10c256ebe5c0fcf75de0a5f9687fbf18d8e542580f8f1bb709e5f",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_4\\seed_2027\\predictions.csv.gz": "bfca83ba27419b68be8faad28213c99cf97d630f676c148a33ec1d84a21d4f96",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_0\\seed_2028\\predictions.csv.gz": "a8c431916513a24ce9128841316f1a4828b6d20bab77df88c81a41ce2e9ac666",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_1\\seed_2028\\predictions.csv.gz": "5fffe02bf0c97c2bf6e39c373ccc821c967f2d8a7a8fccfd9bb6493bfb611967",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_2\\seed_2028\\predictions.csv.gz": "70e65b6ca9babba4dfa01977340c1eb923fe9e1d15140caff0d2e216e323e93f",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_3\\seed_2028\\predictions.csv.gz": "945b4a146201cd403491e985770af967fa528f36dd0def5347fe3c139ae8e008",
+    "results\\lookback_density_v1\\askubuntu\\lookback_24h_train_6h\\fold_4\\seed_2028\\predictions.csv.gz": "c6158201915773879504a1e52a42e6c2ab48b75f457cf42407986e4ba080e814"
+  },
+  "scope": "post-hoc descriptive error analysis; no retraining, threshold changes, or causal attribution",
+  "all_primary_labels_reconstructed": 452166
+}

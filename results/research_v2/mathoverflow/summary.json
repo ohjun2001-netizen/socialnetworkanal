@@ -1,0 +1,511 @@
+{
+  "dataset": "mathoverflow",
+  "completed_runs": 15,
+  "expected_runs": 15,
+  "final_report": true,
+  "bootstrap_repeats": 1000,
+  "test_dates": {
+    "first_test_cutoff_utc": "2013-01-02 00:00:00+00:00",
+    "last_test_label_end_utc": "2016-03-06 00:00:00+00:00"
+  },
+  "data": {
+    "dataset": "mathoverflow",
+    "source": "https://snap.stanford.edu/data/sx-mathoverflow.html",
+    "download_source": "pinned public mirror; original SNAP host timed out",
+    "mirror_commit": "a1023fc6c54c70cd92d2152c8dc091829f7e2451",
+    "files": [
+      {
+        "kind": "a2q",
+        "rows": 107581,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-a2q.txt",
+        "sha256": "51a0728050659cee0a59a63f7d84db889c4d64afe36220c381046bc20464f65e",
+        "bytes": 2317694
+      },
+      {
+        "kind": "c2a",
+        "rows": 195330,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-c2a.txt",
+        "sha256": "76c0ee20dcb9dcaa038549b678252df7b2436ab0bdb2d035057258e8723d6f84",
+        "bytes": 4176276
+      },
+      {
+        "kind": "c2q",
+        "rows": 203639,
+        "url": "https://raw.githubusercontent.com/4AlexMin/dynamic-networks/a1023fc6c54c70cd92d2152c8dc091829f7e2451/human/Interactive%20Digital%20Communities/sx-mathoverflow-c2q.txt",
+        "sha256": "7728dc851dad6834ac669f843c159270231c36e9b7e8a7f3682a1bd6e4876bf3",
+        "bytes": 4430416
+      }
+    ],
+    "raw_events": 506550,
+    "self_events_removed": 116109,
+    "used_events": 390441,
+    "users": 24759,
+    "first_time": 1254192988,
+    "last_time": 1457261724,
+    "type_counts_used": {
+      "c2q": 146649,
+      "c2a": 139654,
+      "a2q": 104138
+    },
+    "identical_multiset_to_v1": true,
+    "duplicate_event_rows_retained": 27,
+    "node_ids": "remapped identifiers only; no future-derived node features"
+  },
+  "unique_test_candidates": 31305,
+  "unique_test_positives": 3787,
+  "test_prevalence": 0.1209710908800511,
+  "models": [
+    {
+      "model": "Hybrid ensemble",
+      "ap_mean": 0.22761045438816155,
+      "ap_fold_sd": 0.01616327377296804,
+      "ap_seed_sd_mean": 0.0032265525024850624,
+      "auc_mean": 0.7004364021765594,
+      "f1_mean": 0.3001069292193592,
+      "precision_mean": 0.20908919486169109,
+      "recall_mean": 0.5451855755658155,
+      "mcc_mean": 0.1823915326783925,
+      "brier_mean": 0.1010646623105305,
+      "precision_at_5": 0.2295591381798278,
+      "recall_at_5": 0.3525796456790703
+    },
+    {
+      "model": "No decay LightGBM",
+      "ap_mean": 0.22715430713464269,
+      "ap_fold_sd": 0.01738496923387093,
+      "ap_seed_sd_mean": 0.002223692285819572,
+      "auc_mean": 0.7009187919925569,
+      "f1_mean": 0.30040851431676574,
+      "precision_mean": 0.20792173245012752,
+      "recall_mean": 0.5534219457974412,
+      "mcc_mean": 0.18255233133142673,
+      "brier_mean": 0.10107082847876711,
+      "precision_at_5": 0.23007513559237697,
+      "recall_at_5": 0.3535127822998807
+    },
+    {
+      "model": "Full LightGBM",
+      "ap_mean": 0.22599444148588912,
+      "ap_fold_sd": 0.0156602045130836,
+      "ap_seed_sd_mean": 0.0017562504326517254,
+      "auc_mean": 0.6994905224019933,
+      "f1_mean": 0.30082854505625034,
+      "precision_mean": 0.2120419044111012,
+      "recall_mean": 0.5250369176126758,
+      "mcc_mean": 0.18167886106500433,
+      "brier_mean": 0.101132748861879,
+      "precision_at_5": 0.2292143105936209,
+      "recall_at_5": 0.3521314672693907
+    },
+    {
+      "model": "No structure LightGBM",
+      "ap_mean": 0.2249238184148794,
+      "ap_fold_sd": 0.01667211587960008,
+      "ap_seed_sd_mean": 0.001994232608819104,
+      "auc_mean": 0.697791482402812,
+      "f1_mean": 0.303155525279701,
+      "precision_mean": 0.20900789043037213,
+      "recall_mean": 0.5575050090249316,
+      "mcc_mean": 0.1851080012888998,
+      "brier_mean": 0.10125339017774024,
+      "precision_at_5": 0.22645568990396572,
+      "recall_at_5": 0.3482339693796228
+    },
+    {
+      "model": "TGN recurrence",
+      "ap_mean": 0.21030730416636617,
+      "ap_fold_sd": 0.01847145798770722,
+      "ap_seed_sd_mean": 0.004278248738518465,
+      "auc_mean": 0.679675197006129,
+      "f1_mean": 0.2871573647012871,
+      "precision_mean": 0.19069911392637323,
+      "recall_mean": 0.5960388225820963,
+      "mcc_mean": 0.16519900622048106,
+      "brier_mean": 0.10224693721944449,
+      "precision_at_5": 0.21621585311240482,
+      "recall_at_5": 0.33205411832146153
+    },
+    {
+      "model": "No types LightGBM",
+      "ap_mean": 0.20489987729021708,
+      "ap_fold_sd": 0.012664143426175764,
+      "ap_seed_sd_mean": 0.0014223334647267029,
+      "auc_mean": 0.6545816662982755,
+      "f1_mean": 0.28080758572023967,
+      "precision_mean": 0.19554597872100563,
+      "recall_mean": 0.5118232614993142,
+      "mcc_mean": 0.15408126130691618,
+      "brier_mean": 0.1031686123407419,
+      "precision_at_5": 0.21403244265313223,
+      "recall_at_5": 0.3290804858257653
+    },
+    {
+      "model": "History HGB",
+      "ap_mean": 0.2012086883249681,
+      "ap_fold_sd": 0.011083446103352114,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.6492499342154187,
+      "f1_mean": 0.270697488164117,
+      "precision_mean": 0.1894139474182428,
+      "recall_mean": 0.4870597954330963,
+      "mcc_mean": 0.13993927627188682,
+      "brier_mean": 0.10340970555708899,
+      "precision_at_5": 0.21035303776683084,
+      "recall_at_5": 0.3232740076433585
+    },
+    {
+      "model": "Decay 6h",
+      "ap_mean": 0.1834867919093018,
+      "ap_fold_sd": 0.012399258730931,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.6120342413753296,
+      "f1_mean": 0.24807384019948087,
+      "precision_mean": 0.1628330946076892,
+      "recall_mean": 0.5578058348859416,
+      "mcc_mean": 0.10266482579147902,
+      "brier_mean": NaN,
+      "precision_at_5": 0.19093558740110458,
+      "recall_at_5": 0.29335679855172103
+    },
+    {
+      "model": "Rolling GraphSAGE",
+      "ap_mean": 0.1818680470062495,
+      "ap_fold_sd": 0.01411996421914761,
+      "ap_seed_sd_mean": 0.0022016229430826435,
+      "auc_mean": 0.632342778731758,
+      "f1_mean": 0.25916825241606845,
+      "precision_mean": 0.1802129232853961,
+      "recall_mean": 0.47197189440119985,
+      "mcc_mean": 0.12257330958906303,
+      "brier_mean": 0.10429626493891701,
+      "precision_at_5": 0.192169478031547,
+      "recall_at_5": 0.29547334480915266
+    },
+    {
+      "model": "Recency",
+      "ap_mean": 0.16105615002553325,
+      "ap_fold_sd": 0.007114474062675313,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5816358973961264,
+      "f1_mean": 0.22966850120753107,
+      "precision_mean": 0.1540597105035454,
+      "recall_mean": 0.4817698534358093,
+      "mcc_mean": 0.07659594877698558,
+      "brier_mean": NaN,
+      "precision_at_5": 0.17342513808031046,
+      "recall_at_5": 0.2667222180715133
+    },
+    {
+      "model": "Pair frequency",
+      "ap_mean": 0.1527522434843377,
+      "ap_fold_sd": 0.011894316531466095,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5791114230488161,
+      "f1_mean": 0.24291077497577387,
+      "precision_mean": 0.15632729285992097,
+      "recall_mean": 0.544721661510994,
+      "mcc_mean": 0.0917925451015915,
+      "brier_mean": NaN,
+      "precision_at_5": 0.1709317524778537,
+      "recall_at_5": 0.2625269375431484
+    },
+    {
+      "model": "Adamic Adar",
+      "ap_mean": 0.13670645318803937,
+      "ap_fold_sd": 0.005028103875990574,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5371664757021188,
+      "f1_mean": 0.21245347065660475,
+      "precision_mean": 0.12617581884345755,
+      "recall_mean": 0.8636015325670499,
+      "mcc_mean": 0.00882163986595996,
+      "brier_mean": NaN,
+      "precision_at_5": 0.14902169215674874,
+      "recall_at_5": 0.2284751518894768
+    },
+    {
+      "model": "Common neighbors",
+      "ap_mean": 0.13487050637946138,
+      "ap_fold_sd": 0.004910747462161115,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5367859122366437,
+      "f1_mean": 0.21258372051702143,
+      "precision_mean": 0.1262600547038667,
+      "recall_mean": 0.8638569604086845,
+      "mcc_mean": 0.00898218199462692,
+      "brier_mean": NaN,
+      "precision_at_5": 0.15014124767889242,
+      "recall_at_5": 0.23032110395248107
+    },
+    {
+      "model": "Jaccard",
+      "ap_mean": 0.12961085105112852,
+      "ap_fold_sd": 0.005444717906490014,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5340074355383835,
+      "f1_mean": 0.21211403254288066,
+      "precision_mean": 0.12665571508210866,
+      "recall_mean": 0.8600255427841634,
+      "mcc_mean": 0.00922493843926922,
+      "brier_mean": NaN,
+      "precision_at_5": 0.14482529468448918,
+      "recall_at_5": 0.222420193321697
+    },
+    {
+      "model": "EdgeBank",
+      "ap_mean": 0.12132436549513573,
+      "ap_fold_sd": 0.005287301183772465,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5,
+      "f1_mean": 0.21636295497320296,
+      "precision_mean": 0.12132436549513573,
+      "recall_mean": 1.0,
+      "mcc_mean": 0.0,
+      "brier_mean": 0.8786756345048641,
+      "precision_at_5": 0.12243752334958029,
+      "recall_at_5": 0.18815951817353066
+    },
+    {
+      "model": "Always positive",
+      "ap_mean": 0.12132436549513573,
+      "ap_fold_sd": 0.005287301183772465,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5,
+      "f1_mean": 0.21636295497320296,
+      "precision_mean": 0.12132436549513573,
+      "recall_mean": 1.0,
+      "mcc_mean": 0.0,
+      "brier_mean": 0.8786756345048641,
+      "precision_at_5": 0.12243752334958029,
+      "recall_at_5": 0.18815951817353066
+    },
+    {
+      "model": "Train prevalence",
+      "ap_mean": 0.12132436549513573,
+      "ap_fold_sd": 0.005287301183772465,
+      "ap_seed_sd_mean": 0.0,
+      "auc_mean": 0.5,
+      "f1_mean": 0.21636295497320296,
+      "precision_mean": 0.12132436549513573,
+      "recall_mean": 1.0,
+      "mcc_mean": 0.0,
+      "brier_mean": 0.10680346224135837,
+      "precision_at_5": 0.12243752334958029,
+      "recall_at_5": 0.18815951817353066
+    }
+  ],
+  "pooled_ensemble": [
+    {
+      "model": "Adamic Adar",
+      "ap": 0.13516544346484832,
+      "auc": 0.5369225737411563,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.1173367329461519,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Always positive",
+      "ap": 0.1209710908800511,
+      "auc": 0.5,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.0,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Common neighbors",
+      "ap": 0.1335777613050611,
+      "auc": 0.5365645009887952,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.1042122571045518,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Decay 6h",
+      "ap": 0.18069861295917036,
+      "auc": 0.6121968119846772,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.4937338470258328,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "EdgeBank",
+      "ap": 0.1209710908800511,
+      "auc": 0.5,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.0,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Full LightGBM",
+      "ap": 0.22387767980741113,
+      "auc": 0.6993348022552701,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.8506709179749157,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "History HGB",
+      "ap": 0.19808843644482946,
+      "auc": 0.6475033371344159,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.6374857414590405,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Hybrid ensemble",
+      "ap": 0.22533377600661222,
+      "auc": 0.700537563016822,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.8627076466561912,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Jaccard",
+      "ap": 0.12857092720822685,
+      "auc": 0.5339098686884892,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.062823574400196,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "No decay LightGBM",
+      "ap": 0.22395159620107652,
+      "auc": 0.7005080698745366,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.8512819432465542,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "No structure LightGBM",
+      "ap": 0.22207890528363372,
+      "auc": 0.6973274405520065,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.835801460233471,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "No types LightGBM",
+      "ap": 0.20220779239186376,
+      "auc": 0.6548162498069056,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.6715381412271706,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Pair frequency",
+      "ap": 0.15157417981783766,
+      "auc": 0.5792403197960562,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.2529785316074487,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Recency",
+      "ap": 0.15939292032360047,
+      "auc": 0.5818178534623317,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.3176116637787993,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Rolling GraphSAGE",
+      "ap": 0.17796894422466666,
+      "auc": 0.6322589570629938,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.4711692101804041,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "TGN recurrence",
+      "ap": 0.20775056082434362,
+      "auc": 0.6809216534514806,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.7173570917892995,
+      "n": 31305,
+      "positive": 3787
+    },
+    {
+      "model": "Train prevalence",
+      "ap": 0.12306890970656403,
+      "auc": 0.5086059952826709,
+      "prevalence": 0.1209710908800511,
+      "ap_lift": 1.0173414888735113,
+      "n": 31305,
+      "positive": 3787
+    }
+  ],
+  "comparisons": [
+    {
+      "model_a": "Full LightGBM",
+      "model_b": "History HGB",
+      "delta_ap": 0.025789243362581676,
+      "ci_low": 0.021359418363693053,
+      "ci_high": 0.03048451833294176,
+      "block_days": 7,
+      "blocks": 170,
+      "repeats": 1000,
+      "interpretation": "paired time-block bootstrap; temporal dependence beyond block length may remain"
+    },
+    {
+      "model_a": "Full LightGBM",
+      "model_b": "No types LightGBM",
+      "delta_ap": 0.021669887415547373,
+      "ci_low": 0.017178238722325358,
+      "ci_high": 0.026466449864576292,
+      "block_days": 7,
+      "blocks": 170,
+      "repeats": 1000,
+      "interpretation": "paired time-block bootstrap; temporal dependence beyond block length may remain"
+    },
+    {
+      "model_a": "Hybrid ensemble",
+      "model_b": "Full LightGBM",
+      "delta_ap": 0.0014560961992010901,
+      "ci_low": 5.6639789432127325e-05,
+      "ci_high": 0.0029247738184915244,
+      "block_days": 7,
+      "blocks": 170,
+      "repeats": 1000,
+      "interpretation": "paired time-block bootstrap; temporal dependence beyond block length may remain"
+    },
+    {
+      "model_a": "Full LightGBM",
+      "model_b": "History HGB",
+      "delta_ap": 0.025789243362581676,
+      "ci_low": 0.02126354410760119,
+      "ci_high": 0.030127114101192384,
+      "block_days": 14,
+      "blocks": 88,
+      "repeats": 1000,
+      "interpretation": "paired time-block bootstrap; temporal dependence beyond block length may remain"
+    },
+    {
+      "model_a": "Full LightGBM",
+      "model_b": "History HGB",
+      "delta_ap": 0.025789243362581676,
+      "ci_low": 0.020691609275073304,
+      "ci_high": 0.030982758490526736,
+      "block_days": 28,
+      "blocks": 47,
+      "repeats": 1000,
+      "interpretation": "paired time-block bootstrap; temporal dependence beyond block length may remain"
+    }
+  ],
+  "scope": "retrospective",
+  "disclosure": "v1 MathOverflow test was previously examined; no claim of untouched confirmatory holdout"
+}

@@ -1,0 +1,6 @@
+fold=3 seed=2026: CUDA RankNet pointwise + pairwise training
+fold=3 seed=2026: locked CUDA scores in 8.5s; test metric untouched
+fold=3 seed=2027: CUDA RankNet pointwise + pairwise training
+fold=3 seed=2027: locked CUDA scores in 7.0s; test metric untouched
+fold=3 seed=2028: CUDA RankNet pointwise + pairwise training
+fold=3 seed=2028: locked CUDA scores in 7.0s; test metric untouched

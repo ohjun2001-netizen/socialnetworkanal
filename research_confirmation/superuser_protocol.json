@@ -1,0 +1,39 @@
+{
+  "version": "superuser-confirmation-v1",
+  "frozen_at_local_date": "2026-10-24",
+  "dataset": "SNAP Super User temporal network",
+  "official_page": "https://snap.stanford.edu/data/sx-superuser.html",
+  "expected_raw_counts": {
+    "a2q": 430033,
+    "c2a": 534239,
+    "c2q": 479067,
+    "total": 1443339
+  },
+  "status_at_freeze": "No Super User event file has been downloaded, inspected, featurized, trained, or tested in this project.",
+  "candidate_definition": "directed user pair with at least one event in [cutoff-24h, cutoff)",
+  "target_definition": "same directed pair has at least one event in [cutoff, cutoff+24h)",
+  "warmup_days": 30,
+  "training_stride_hours": 6,
+  "tuning_calibration_test_stride_hours": 24,
+  "evaluation_hour": "UTC midnight",
+  "folds": "five expanding temporal folds; test starts at 50, 60, 70, 80, and 90 percent of eligible daily cutoffs and spans the next 10 percent; immediately preceding 5 percent calibration and preceding 5 percent tuning; every label window must end before the next partition starts",
+  "models": [
+    "Baseline Full LightGBM",
+    "Two-stage activity-choice",
+    "Recency-type experts",
+    "Two-stage recency-type experts"
+  ],
+  "hyperparameters": "For each fold, tune one baseline LightGBM configuration with 16 Optuna trials using only train and tuning intervals; reuse that fixed configuration for every model and seed in the fold.",
+  "seeds": [2026, 2027, 2028],
+  "calibration_and_threshold": "Probability calibration and F1 threshold use only the calibration interval. Test labels are not used for model, hyperparameter, ensemble, threshold, or subgroup selection.",
+  "primary_hypothesis": "Recency-type experts improve average precision over Baseline Full LightGBM on all 24h candidates.",
+  "primary_success_rule": "Paired 7-day block bootstrap 95% interval for seed-averaged AP difference is entirely above zero, and mean five-fold F1 is no more than 0.005 below baseline.",
+  "secondary_hypotheses": [
+    "Two-stage activity-choice improves AP over baseline.",
+    "The combined two-stage recency-type experts improve AP over baseline."
+  ],
+  "reported_metrics": ["AP", "ROC-AUC", "F1", "precision", "recall", "MCC", "Brier", "AP lift"],
+  "uncertainty": "paired 7-day time-block bootstrap with 1000 replicates after averaging the three seed scores; primary comparison is experts versus baseline; secondary intervals are labeled exploratory",
+  "test_access_policy": "Training writes frozen test scores but no test metric. The final reporting command may be run once after all 15 fold-seed runs, and its first completed report is retained with code and data hashes.",
+  "scope": "Within-domain Super User training and untouched external confirmation of structures designed on MathOverflow and AskUbuntu; not zero-shot transfer and not a GNN comparison."
+}

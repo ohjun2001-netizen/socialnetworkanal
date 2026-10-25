@@ -1,0 +1,24 @@
+{
+  "version": "remedy-v1",
+  "datasets": ["mathoverflow", "askubuntu"],
+  "candidate_lookback_hours": 24,
+  "training_stride_hours": 6,
+  "target_horizon_hours": 24,
+  "evaluation_stride_hours": 24,
+  "folds": "same five calendar boundaries as research_v2 and lookback_density_v1",
+  "seeds": [2026, 2027, 2028],
+  "baseline": "frozen Full LightGBM from lookback_24h_train_6h",
+  "models": [
+    "Two-stage activity-choice",
+    "Recency-type experts",
+    "Two-stage recency-type experts"
+  ],
+  "activity_target": "source has any outgoing a2q/c2a/c2q event in the next 24 hours",
+  "choice_target": "same directed source-target pair reconnects in the next 24 hours, conditioned on source activity for two-stage models",
+  "expert_groups": "last pair event <=4h or 4-24h, crossed with a2q/c2a/c2q",
+  "hyperparameters": "reuse each fold's frozen v2 LightGBM configuration; no test-driven tuning",
+  "threshold": "chosen only on each fold's calibration interval to maximize F1",
+  "primary_metric": "average precision at natural prevalence",
+  "uncertainty": "paired 7-day block bootstrap, 1000 replicates",
+  "disclosure": "Designed after inspecting error patterns on both test sets. All results are retrospective exploratory analyses, not untouched confirmation. Future activity labels are used only as training targets inside past partitions and as post-hoc diagnostics, never as inference features."
+}
