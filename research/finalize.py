@@ -100,12 +100,12 @@ def main():
               "이번 결과를 보고 같은 테스트에 계속 맞추면 검증의 신뢰도가 낮아집니다. 후속 개선은 새 기간/새 데이터의 미확인 평가를 먼저 확보하는 것이 좋습니다.", "",
               "6. 어디서 확인하나", "",
               "start_app.ps1: 새 결과 화면. 열람만으로 재학습/유료 API를 호출하지 않습니다.",
-              "results/research_v2/<데이터>/report_ko.md: 표와 신뢰구간.",
-              "같은 폴더의 ap_comparison.png / fold_stability.png / pr_and_calibration.png: 그래프.",
+              "results/research_v2/<데이터>/summary.json / model_summary.csv: 최종 집계와 모델별 지표.",
+              "같은 폴더의 ap_comparison.png / fold_stability.png / pr_and_calibration.png: 대표 그래프.",
               "fold_N/seed_N/predictions.csv.gz: 모든 후보의 정답·점수·판정.",
               "audit.json: 저장 예측 재계산과 원본 정답 검사 결과.",
               "models/research_v2/<데이터>/full_lightgbm.joblib: 마지막 구간 시드 2026의 사전 지정 모델. 테스트로 재학습하지 않았고 저장 예측 재현을 검증했습니다.",
-              "RESEARCH_PROTOCOL_KO.md / IMPLEMENTATION_AUDIT_KO.md: 세부 규칙·이전 구현 정정."]
+              "README.md / data_manifest.json / run_manifest.json: 문제 정의, 데이터 출처와 실행 환경."]
     (ROOT/"최종_결과_쉽게_설명.txt").write_text("\n".join(lines),encoding="utf-8")
     validation=["# 최종 검증 — research v2", "", "두 데이터 각각 15회, 총 30회 실험을 완료하고 저장 예측을 재검산했습니다.", "",
                 "자동 테스트:", "", "```text", tests.stdout.strip(), "```", ""]

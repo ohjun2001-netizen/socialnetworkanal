@@ -1,2 +1,0 @@
--r requirements-research.txt
-numba>=0.61,<1

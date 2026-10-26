@@ -1,7 +1,0 @@
-model,baseline,cohort,primary,delta_ap,ci_low,ci_high,n,block_days,blocks,repeats
-Two-stage activity-choice,Baseline Full LightGBM,all,False,-0.016352876753054205,-0.018917597497845183,-0.013940965249522966,553277,7,192,1000
-Recency-type experts,Baseline Full LightGBM,all,True,0.000265558852942549,-0.0008867663282399775,0.0015092758435862918,553277,7,192,1000
-Two-stage recency-type experts,Baseline Full LightGBM,all,False,-0.01532072350835087,-0.017731054219077592,-0.01298183539733774,553277,7,192,1000
-Two-stage activity-choice,Baseline Full LightGBM,common_4h,False,-0.02545167018453215,-0.03041241973253411,-0.02067611833548674,126471,7,192,1000
-Recency-type experts,Baseline Full LightGBM,common_4h,False,-0.00022755209552868805,-0.0026281895793901257,0.0023623168496005424,126471,7,192,1000
-Two-stage recency-type experts,Baseline Full LightGBM,common_4h,False,-0.020448262173237725,-0.025377458133649552,-0.015556090946143578,126471,7,192,1000

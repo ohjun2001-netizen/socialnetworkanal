@@ -1,3 +1,0 @@
-model,baseline,delta_ap,ci_low,ci_high,n,block_days,blocks,repeats
-CUDA RankNet,Frozen Baseline Full LightGBM,-0.010532234946810964,-0.012232089539604337,-0.008769610451377073,553277,7,192,1000
-Fixed 50/50 ensemble,Frozen Baseline Full LightGBM,-0.002162921130027501,-0.0029168378931181383,-0.0014250103581268923,553277,7,192,1000

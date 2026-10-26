@@ -1,9 +1,0 @@
-{
-  "delta_ndcg_at_5": -0.007960506828833239,
-  "ci_low": -0.011041313987743268,
-  "ci_high": -0.00523750375126115,
-  "eligible_groups": 9446,
-  "block_days": 7,
-  "blocks": 192,
-  "repeats": 1000
-}

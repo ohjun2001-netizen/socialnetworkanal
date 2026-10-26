@@ -1,6 +1,0 @@
-model_a,model_b,delta_ap,ci_low,ci_high,block_days,blocks,repeats,interpretation
-Full LightGBM,History HGB,0.025789243362581676,0.021359418363693053,0.03048451833294176,7,170,1000,paired time-block bootstrap; temporal dependence beyond block length may remain
-Full LightGBM,No types LightGBM,0.021669887415547373,0.017178238722325358,0.026466449864576292,7,170,1000,paired time-block bootstrap; temporal dependence beyond block length may remain
-Hybrid ensemble,Full LightGBM,0.0014560961992010901,5.6639789432127325e-05,0.0029247738184915244,7,170,1000,paired time-block bootstrap; temporal dependence beyond block length may remain
-Full LightGBM,History HGB,0.025789243362581676,0.02126354410760119,0.030127114101192384,14,88,1000,paired time-block bootstrap; temporal dependence beyond block length may remain
-Full LightGBM,History HGB,0.025789243362581676,0.020691609275073304,0.030982758490526736,28,47,1000,paired time-block bootstrap; temporal dependence beyond block length may remain

@@ -11,6 +11,14 @@ models/
 results/research_v2/*/fold_*/seed_*/predictions.csv.gz
 results/research_v2/*/fold_*/seed_*/*_scores.npz
 results/research_v2/*/oof_seed_ensemble.csv.gz
-results/lookback_density_v1/*/lookback_*/fold_*/seed_*/predictions.csv.gz
 runs/
+*.log
+*.npz
+*.csv.gz
+_qa*/
+.env
+.env.*
+.streamlit/secrets.toml
+최종_결과_쉽게_설명.txt
+VALIDATION_KO.md
 
